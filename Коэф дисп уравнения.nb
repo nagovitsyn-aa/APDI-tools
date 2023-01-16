@@ -1,0 +1,157 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4853,        149]
+NotebookOptionsPosition[      4384,        134]
+NotebookOutlinePosition[      4788,        150]
+CellTagsIndexPosition[      4745,        147]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Phi]", "(", "x", ")"}], "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["1", 
+      SqrtBox[
+       RowBox[{
+        SubsuperscriptBox["L", "m", "+"], "(", "x", ")"}]]], 
+     RowBox[{"exp", "(", 
+      RowBox[{
+       RowBox[{"i", " ", 
+        RowBox[{
+         SuperscriptBox["\[Integral]", "x"], 
+         RowBox[{
+          RowBox[{
+           SubsuperscriptBox["q", "x", "+"], "(", 
+           RowBox[{"m", ",", "\[Xi]"}], ")"}], "d\[Xi]"}]}]}], "-", 
+       RowBox[{"i", " ", 
+        FractionBox["\[Pi]", "4"]}]}], ")"}]}], "+", 
+    RowBox[{
+     FractionBox["1", 
+      SqrtBox[
+       RowBox[{
+        SubsuperscriptBox["L", "m", "-"], "(", "x", ")"}]]], 
+     RowBox[{"exp", "(", 
+      RowBox[{
+       RowBox[{"i", " ", 
+        RowBox[{
+         SuperscriptBox["\[Integral]", "x"], 
+         RowBox[{
+          RowBox[{
+           SubsuperscriptBox["q", "x", "-"], "(", 
+           RowBox[{"m", ",", "\[Xi]"}], ")"}], "d\[Xi]"}]}]}], "+", 
+       RowBox[{"i", " ", 
+        FractionBox["\[Pi]", "4"]}]}], ")"}]}]}]}], TraditionalForm], "\n", 
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubsuperscriptBox["L", "m", "\[PlusMinus]"], "(", "x", ")"}], "=", 
+   RowBox[{
+    SubsuperscriptBox["D", "mq", "\[PlusMinus]"], 
+    RowBox[{
+     SubsuperscriptBox["\[Integral]", 
+      SubsuperscriptBox["x", "lm", "*"], 
+      SubsuperscriptBox["x", "rm", "*"]], 
+     RowBox[{"d\[Xi]", "(", 
+      RowBox[{
+       FractionBox["1", 
+        RowBox[{
+         SubsuperscriptBox["D", "mq", "+"], "(", "\[Xi]", ")"}]], "+", 
+       FractionBox["1", 
+        RowBox[{
+         SubsuperscriptBox["D", "mq", "-"], "(", "\[Xi]", ")"}]], "+", 
+       RowBox[{"2", 
+        FractionBox[
+         RowBox[{"sin", "(", 
+          RowBox[{"\[Psi]", "(", "\[Xi]", ")"}], ")"}], 
+         SqrtBox[
+          RowBox[{
+           RowBox[{
+            SubsuperscriptBox["D", "mq", "-"], "(", "\[Xi]", ")"}], 
+           RowBox[{
+            SubsuperscriptBox["D", "mq", "+"], "(", "\[Xi]", ")"}]}]]]}]}], 
+      ")"}]}]}]}], TraditionalForm]}], "DisplayFormula",
+ CellChangeTimes->{{3.877507562598389*^9, 3.877507626708476*^9}, {
+  3.877511854942304*^9, 3.877511864932514*^9}, {3.877511926652272*^9, 
+  3.8775119617567105`*^9}, {3.8782662277533703`*^9, 
+  3.8782662795258694`*^9}},ExpressionUUID->"bae7dd81-c862-40a2-ab44-\
+c87bd1617602"],
+
+Cell[BoxData[{
+ FormBox[
+  RowBox[{
+   RowBox[{"\[LeftAngleBracket]", 
+    FractionBox[
+     RowBox[{"\[PartialD]", 
+      SubscriptBox["\[ScriptCapitalD]", "UH"]}], 
+     RowBox[{"\[PartialD]", "\[Omega]"}]], "\[RightAngleBracket]"}], "=", 
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", 
+     SubsuperscriptBox["x", "lm", "*"], 
+     SubsuperscriptBox["x", "rm", "*"]], 
+    RowBox[{
+     RowBox[{"\[DifferentialD]", "\[Xi]"}], " ", 
+     SuperscriptBox["\[Phi]", "*"], " ", 
+     FractionBox[
+      RowBox[{"\[PartialD]", 
+       SubscriptBox["\[ScriptCapitalD]", "UH"]}], 
+      RowBox[{"\[PartialD]", "\[Omega]"}]], "\[Phi]"}]}]}], 
+  TraditionalForm], "\[IndentingNewLine]", 
+ FormBox[
+  RowBox[{
+   SubscriptBox["\[CapitalLambda]", "y"], "=", 
+   RowBox[{
+    RowBox[{"\[LeftAngleBracket]", 
+     FractionBox[
+      RowBox[{
+       SuperscriptBox["\[PartialD]", "2"], 
+       SubscriptBox["\[ScriptCapitalD]", "UH"]}], 
+      RowBox[{"2", 
+       RowBox[{"\[PartialD]", 
+        SuperscriptBox["y", "2"]}]}]], "\[RightAngleBracket]"}], "/", 
+    RowBox[{"\[LeftAngleBracket]", 
+     FractionBox[
+      RowBox[{"\[PartialD]", 
+       SubscriptBox["\[ScriptCapitalD]", "UH"]}], 
+      RowBox[{"\[PartialD]", "\[Omega]"}]], "\[RightAngleBracket]"}]}]}], 
+  TraditionalForm]}], "DisplayFormula",
+ CellChangeTimes->{{3.8775136242100077`*^9, 3.877513735503874*^9}, 
+   3.877671876115389*^9},ExpressionUUID->"dd5d8616-7d27-4968-8ee0-\
+9032e91d2b51"]
+},
+WindowSize->{582.6, 493.2},
+WindowMargins->{{279, Automatic}, {Automatic, 40.2}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 9, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"99ccd95d-0880-452c-accd-0dded58bb0bb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2368, 70, 114, "DisplayFormula",ExpressionUUID->"bae7dd81-c862-40a2-ab44-c87bd1617602"],
+Cell[2929, 92, 1451, 40, 94, "DisplayFormula",ExpressionUUID->"dd5d8616-7d27-4968-8ee0-9032e91d2b51"]
+}
+]
+*)
+
