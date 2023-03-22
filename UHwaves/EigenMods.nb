@@ -1,0 +1,145 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5615,        137]
+NotebookOptionsPosition[      4638,        113]
+NotebookOutlinePosition[      5040,        129]
+CellTagsIndexPosition[      4997,        126]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<UHEigenMods`\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.87784560603092*^9, 3.8778456074527626`*^9}, {
+   3.8778456479504747`*^9, 3.877845653090667*^9}, {3.8778465979480724`*^9, 
+   3.877846672343342*^9}, {3.87784670766572*^9, 3.8778467160113487`*^9}, {
+   3.878014040131813*^9, 3.8780140432449093`*^9}, {3.8780167061985664`*^9, 
+   3.878016723398816*^9}, {3.8799348295690756`*^9, 3.879934853827865*^9}, 
+   3.880017075960582*^9},
+ CellLabel->"In[20]:=",ExpressionUUID->"27e45fdf-f2cc-40d5-ac7e-47c13331aa0a"],
+
+Cell[BoxData[
+ RowBox[{"eigenFreq", "=", 
+  RowBox[{"EigenModsND", "[", "]"}]}]], "Input",
+ CellChangeTimes->{{3.878016736985843*^9, 3.878016737052894*^9}, {
+  3.8799335314680777`*^9, 3.879933589475069*^9}, {3.8853642369969683`*^9, 
+  3.8853642438065867`*^9}},ExpressionUUID->"6941653b-ab21-408a-a2af-\
+acf93ac2744c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fm", "=", 
+  RowBox[{
+   RowBox[{"Datafm", "\[Transpose]"}], "\[LeftDoubleBracket]", "2", 
+   "\[RightDoubleBracket]"}]}]], "Input",
+ CellChangeTimes->{{3.8799337048997293`*^9, 3.879933742693927*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"a3705bcc-9444-4df7-ba6b-199611dcf19b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "52.513171737766875`", ",", "52.43280365308114`", ",", "52.35352237995838`",
+    ",", "52.275330552310315`", ",", "52.198232242674436`", ",", 
+   "52.12223307255131`", ",", "52.047340344586395`", ",", 
+   "51.97356320109999`", ",", "51.90091281474458`", ",", 
+   "51.829402618780286`", ",", "51.75904858679084`", ",", 
+   "51.689869574887105`", ",", "51.62188774398291`", ",", 
+   "51.55512908623461`", ",", "51.48962408926506`", ",", "51.42540858608376`",
+    ",", "51.362524860629776`", ",", "51.30102311383626`", ",", 
+   "51.24096345268072`", ",", "51.18241866346449`", ",", "51.12547820866043`",
+    ",", "51.070254227585885`", ",", "51.016891024035054`", ",", 
+   "50.965581117308844`", ",", "50.916595031654445`", ",", 
+   "50.87034461856986`", ",", "50.82755142834357`", ",", 
+   "50.789979926671045`"}], "}"}]], "Output",
+ CellChangeTimes->{{3.8799337333361964`*^9, 3.8799337435064063`*^9}},
+ CellLabel->"Out[21]=",ExpressionUUID->"e416d107-d298-45be-a2f8-b0646aa48491"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<EigenFreq.txt\>\"", ",", "fm"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.885362737746377*^9, 
+  3.8853628816590843`*^9}},ExpressionUUID->"c855b291-e66e-4b27-bf73-\
+7679ebb49e55"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{"Export", "[", 
+    RowBox[{"\"\<EigenFreq.txt\>\"", ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "52.513171737766875`", ",", "52.43280365308114`", ",", 
+       "52.35352237995838`", ",", "52.275330552310315`", ",", 
+       "52.198232242674436`", ",", "52.12223307255131`", ",", 
+       "52.047340344586395`", ",", "51.97356320109999`", ",", 
+       "51.90091281474458`", ",", "51.829402618780286`", ",", 
+       "51.75904858679084`", ",", "51.689869574887105`", ",", 
+       "51.62188774398291`", ",", "51.55512908623461`", ",", 
+       "51.48962408926506`", ",", "51.42540858608376`", ",", 
+       "51.362524860629776`", ",", "51.30102311383626`", ",", 
+       "51.24096345268072`", ",", "51.18241866346449`", ",", 
+       "51.12547820866043`", ",", "51.070254227585885`", ",", 
+       "51.016891024035054`", ",", "50.965581117308844`", ",", 
+       "50.916595031654445`", ",", "50.87034461856986`", ",", 
+       "50.82755142834357`", ",", "50.789979926671045`"}], "}"}]}], "]"}], 
+   ";"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.885362737746377*^9, 3.8853628816590843`*^9}, {
+  3.8853642183627377`*^9, 
+  3.8853642212392397`*^9}},ExpressionUUID->"08fd6ba2-a7e8-4ce0-9b5e-\
+49280b1c6f94"],
+
+Cell[BoxData["\<\"EigenFreq.txt\"\>"], "Output",
+ CellChangeTimes->{3.885362760648308*^9, 3.8853628836220374`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"ef2e42c7-8417-4ebb-9cd6-7390c689d868"]
+}, Open  ]]
+},
+WindowSize->{1440., 747.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 9, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"01f2f857-4b09-42f1-8058-10c4e8e31c89"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 552, 8, 28, "Input",ExpressionUUID->"27e45fdf-f2cc-40d5-ac7e-47c13331aa0a"],
+Cell[1113, 30, 317, 6, 28, "Input",ExpressionUUID->"6941653b-ab21-408a-a2af-acf93ac2744c"],
+Cell[CellGroupData[{
+Cell[1455, 40, 303, 6, 28, "Input",ExpressionUUID->"a3705bcc-9444-4df7-ba6b-199611dcf19b"],
+Cell[1761, 48, 1021, 17, 52, "Output",ExpressionUUID->"e416d107-d298-45be-a2f8-b0646aa48491"]
+}, Open  ]],
+Cell[2797, 68, 360, 9, 48, "Input",ExpressionUUID->"c855b291-e66e-4b27-bf73-7679ebb49e55"],
+Cell[CellGroupData[{
+Cell[3182, 81, 1245, 25, 86, "Input",ExpressionUUID->"08fd6ba2-a7e8-4ce0-9b5e-49280b1c6f94"],
+Cell[4430, 108, 192, 2, 32, "Output",ExpressionUUID->"ef2e42c7-8417-4ebb-9cd6-7390c689d868"]
+}, Open  ]]
+}
+]
+*)
+
